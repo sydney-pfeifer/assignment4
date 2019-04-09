@@ -1,16 +1,17 @@
 html {
     box-sizing: border-box;
-    margin:0;
+    margin: 0;
     color: #ccc;
 }
+
 body {
     background-color: black;
     background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.2)), url(../images/background.jpg);
-    
+
     background-size: cover;
     background-position: center;
     min-height: 100vh;
-    
+
     display: flex;
     flex-direction: column;
 }
@@ -36,12 +37,17 @@ main {
     font-size: 1.5em;
 }
 
-body nav ul li a {color: antiquewhite;
+body nav ul li a {
+    color: antiquewhite;
     font-family: sans-serif;
     display: flex;
     justify-content: flex-end;
     padding: 1em;
-    
+
+}
+
+ul {
+    list-style-type: none;
 }
 
 body main div {
@@ -50,6 +56,7 @@ body main div {
     display: inline-block;
     align-items: center;
 }
+
 h1,
 h2 {
     font-family: sans-serif;
@@ -57,29 +64,46 @@ h2 {
     color: whitesmoke;
 }
 
-h1 {border: 2px solid #000000; 
+h1 {
+    border: 2px solid #000000;
     border-radius: 15px;
     width: 300px;
     background-color: #bbbbbb;
- 
+
     box-shadow: 5px 5px 5px #5a5a5a;
-    }
+}
 
 .link {
     color: antiquewhite;
     font-family: sans-serif;
-    text-decoration: none;
 }
+
+form p {
+    display: flex;
+    
+}
+
+.thanks {
+    font-size: 3em;
+    background-color: rgba(0, 0, 0, 0.38);
+    
+}
+
 footer {
     background-color: gainsboro;
     display: flex;
     flex-direction: row-reverse;
-    font-size: 1.5em; 
+    font-size: 1.5em;
 }
+
 @media screen and (max-width: 30rem) {
-    header, 
-    main, 
-    footer {
+    header,
+    main,
+    footer
+    form p {
         flex-direction: column;
+    }
+    form input, text area {
+        margin: 2px 0;
     }
 }
