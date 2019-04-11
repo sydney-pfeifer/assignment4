@@ -55,6 +55,7 @@ body main div {
     flex-direction: row;
     display: inline-block;
     align-items: center;
+    margin: 10px 20px;
 }
 
 h1,
@@ -80,8 +81,10 @@ h1 {
 
 form p {
     display: flex;
+    justify-content: center;
     
 }
+
 
 .thanks {
     font-size: 3em;
