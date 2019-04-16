@@ -85,6 +85,13 @@ form p {
     
 }
 
+body main form {
+    padding: 3em;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.31);
+}
+
 
 .thanks {
     font-size: 3em;
